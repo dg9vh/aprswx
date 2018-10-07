@@ -13,13 +13,17 @@ Fill the corresponding variables with your information:
 `dapnetpasswd="YOURDAPNETWEB-PASSWORD"` 
 `aprsapikey="YOURAPRS.FI-APIKEY"`
 
-### Configuration of the weather-stations in `staions.py`
+### Configuration of the weather-stations in `stations.py`
 The weather-stations are configured by filling the infos into the 
 configuration-array as given in the example. Here is the meaning of: 
 * callsign: Callsign of the station in aprs.fi 
 * qth: Location of the station 
 * rubric: Rubric on DAPNET, to which the weather-message should be posted 
 * slot: Number of the message-slot (between 1 to 10), on that the message should be placed 
+
+### Configuration of the rubrics in `rubrics.py`
+This file controls from which region the WX data are fetched. Please
+note that you need authorized for sending data to the rubric.
 
 ## Installation in crontab
 To run the script periodically, it would be recommended to place it 
