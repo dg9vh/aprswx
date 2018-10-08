@@ -66,4 +66,42 @@ stations = [
         {'callsign':'FW2924','qth':'Dieskau','rubric':'aprswx-dl-st','slot':1},
         {'callsign':'DM1AD-13','qth':'Magdeburg','rubric':'aprswx-dl-st','slot':2},
 # Bremen
+
+# HB9 Grossregionen
+# CH01 Genferseeregion: Kantone Genf, Waadt und Wallis
+        {'callsign':'HB9HFD-13','qth':'GE'  ,'rubric':'aprswx-hb-01','slot':1},
+        {'callsign':'EW5758'   ,'qth':'VD' ,'rubric':'aprswx-hb-01','slot':2},
+        {'callsign':'EW3359'   ,'qth':'VS','rubric':'aprswx-hb-01','slot':3},
+# CH02 Espace Mittelland: Kantone Bern, Solothurn, Freiburg, Neuenburg und Jura
+        {'callsign':'HB9DCR-10','qth':'BE, Belp','rubric':'aprswx-hb-02','slot':1},
+        {'callsign':'FW2555'   ,'qth':'SO' ,'rubric':'aprswx-hb-02','slot':2},
+        {'callsign':'EW5976'   ,'qth':'FR'  ,'rubric':'aprswx-hb-02','slot':3},
+        {'callsign':'CW6010'   ,'qth':'NE' ,'rubric':'aprswx-hb-02','slot':4},
+        {'callsign':'EW6231'   ,'qth':'JU'      ,'rubric':'aprswx-hb-02','slot':5},
+# CH03 Nordwestschweiz: Kantone Basel-Stadt, Basel-Landschaft, Aargau
+	{'callsign':'hb9fed'  ,'qth':'BL','rubric':'aprswx-hb-03','slot':1},
+        {'callsign':'HB9EYW-6','qth':'BS'     ,'rubric':'aprswx-hb-03','slot':2},
+        {'callsign':'FW3899'  ,'qth':'AG'          ,'rubric':'aprswx-hb-03','slot':3},
+# CH04 Zuerich: Kanton Zuerich
+        {'callsign':'DW5623','qth':'ZH, Stadt'    ,'rubric':'aprswx-hb-04','slot':1},
+        {'callsign':'CW3619','qth':'ZH, Neftenbach','rubric':'aprswx-hb-04','slot':2},
+# CH05 Ostschweiz: Kantone St. Gallen, Thurgau, Appenzell Innerrhoden, Appenzell Ausserrhoden, Glarus, Schaffhausen, Graubuenden
+        {'callsign':'EW2307'   ,'qth':'SG'       ,'rubric':'aprswx-hb-05','slot':1},
+        {'callsign':'HB9KNR'   ,'qth':'TG'          ,'rubric':'aprswx-hb-05','slot':2},
+        {'callsign':'HB9EKJ-6' ,'qth':'GL'           ,'rubric':'aprswx-hb-05','slot':3},
+        {'callsign':'HB9TLH-10','qth':'SH'     ,'rubric':'aprswx-hb-05','slot':4},
+        {'callsign':'HB9DSN-13','qth':'GR, Chur' ,'rubric':'aprswx-hb-05','slot':5},
+        {'callsign':'CW6329'   ,'qth':'GR, Davos','rubric':'aprswx-hb-05','slot':6},
+#        {'callsign':'','qth':'IR','rubric':'aprswx-hb-05','slot':7},
+#        {'callsign':'','qth':'AR','rubric':'aprswx-hb-05','slot':8},
+# CH06 Zentralschweiz: Kantone Uri, Schwyz, Obwalden, Nidwalden, Luzern, Zug
+        {'callsign':'DW1950','qth':'NW','rubric':'aprswx-hb-06','slot':1},
+        {'callsign':'EW1060','qth':'LU'   ,'rubric':'aprswx-hb-06','slot':2},
+        {'callsign':'CW3524','qth':'ZG'      ,'rubric':'aprswx-hb-06','slot':3},
+#        {'callsign':'','qth':'UR','rubric':'aprswx-hb-05','slot':4},
+#        {'callsign':'','qth':'SZ','rubric':'aprswx-hb-05','slot':5},
+#        {'callsign':'','qth':'OW','rubric':'aprswx-hb-05','slot':6},
+# CH07 Tessin: Kanton Tessin
+        {'callsign':'HB9MZI','qth':'TI','rubric':'aprswx-hb-07','slot':1},
 ]
+

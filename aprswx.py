@@ -8,7 +8,22 @@ from requests.auth import HTTPBasicAuth
 
 execfile("credentials.py")
 execfile("stations.py")
+execfile("rubrics.py")
 
+# Split array into smaller portions
+def chunks(l,n):
+	for i in range(0, len(l), n):
+		yield l[i:i + n]
+
+# check response from DAPNET
+def check_response(resp):
+	if resp.status_code != 201:
+		error = json.loads(resp.text)
+                print error
+		print "Error at", station[0]
+		print('POST /news/ {}'.format(resp.status_code))
+
+# Send data from wx station to dapnet
 def send_DAPNET(entry, station):
 	# This function is for creating and sending messages to DAPNET
 
@@ -51,47 +66,37 @@ def send_DAPNET(entry, station):
 
 	# and sending it to DAPNET
 	resp = requests.post('https://hampager.de/api/news/', json=post, auth=HTTPBasicAuth(dapnetuser, dapnetpasswd))
-	if resp.status_code != 201:
-		print "Error at", station[0]
-		print('POST /news/ {}'.format(resp.status_code))
+        check_response(resp)
 
 	# this is a work-around for mirroring messages into another rubric 
 	if station["rubric"] == "aprswx-dl-bw":
 		post={ "rubricName": "hochrhein", "text": msg, "number": station["slot"] }
 		print post
 		resp = requests.post('https://hampager.de/api/news/', json=post, auth=HTTPBasicAuth(dapnetuser, dapnetpasswd))
-		if resp.status_code != 201:
-			print "Error at", station[0]
-			print('POST /news/ {}'.format(resp.status_code))
-
+		check_response(resp)
 
 # let the party begin!
-stations_count = len(stations)
+selected_stations=""
 querystring=""
 
 # the following has to be done for each WX-station in the list
-for i in range(0,stations_count):
-	# due to query-rate-limits on aprs.fi and maximum of 20 stations per
-	# query we have to work in portions
-	if i > 0 and (i % 20) == 0:
-		# fetching data from aprs.fi
-		response = requests.get("https://api.aprs.fi/api/get?name="+querystring+"&what=wx&apikey="+aprsapikey+"&format=json")
-		wx = json.loads(response.text)
-		entries = (wx["entries"])
+for i in range(0,len(stations)):
 
-		# lets do something good with the stuff we got
-		for entry in entries:
-			station = (item for item in stations if item["callsign"] == entry["name"]).next()
-			# calling send-function above
-			send_DAPNET(entry, station)
-		querystring = "";
-	querystring+=stations[i]["callsign"]+","
+        # Build a string with all stations selected by rubrics
+        if [ stations for rubric in rubrics if stations[i]['rubric'] == rubric['rubric'] ]:
+          selected_stations+=stations[i]["callsign"]+","
 
-# now we have a few stations left to procede, so lets do the rest here,
-# same as above, as you see
-response = requests.get("https://api.aprs.fi/api/get?name="+querystring+"&what=wx&apikey="+aprsapikey+"&format=json")
-wx = json.loads(response.text)
-entries = (wx["entries"])
-for entry in entries:
-	station = (item for item in stations if item["callsign"] == entry["name"]).next()
-	send_DAPNET(entry, station)
+# due to query-rate-limits on aprs.fi and maximum of 20 stations per
+# query we have to work in portions
+for line in list(chunks(selected_stations.split(","),20)):
+	querystring = ",".join(line)
+	# fetching data from aprs.fi
+	response = requests.get("https://api.aprs.fi/api/get?name="+querystring+"&what=wx&apikey="+aprsapikey+"&format=json")
+	wx = json.loads(response.text)
+	entries = (wx["entries"])
+
+	# lets do something good with the stuff we got
+	for entry in entries:
+		station = (item for item in stations if item["callsign"] == entry["name"]).next()
+		# calling send-function above
+		send_DAPNET(entry, station)
