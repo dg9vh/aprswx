@@ -20,10 +20,7 @@ configuration-array as given in the example. Here is the meaning of:
 * qth: Location of the station 
 * rubric: Rubric on DAPNET, to which the weather-message should be posted 
 * slot: Number of the message-slot (between 1 to 10), on that the message should be placed 
-
-### Configuration of the rubrics in `rubrics.py`
-This file controls from which region the WX data are fetched. Please
-note that you need authorized for sending data to the rubric.
+* unit: Measurement scale for temperature: c means Celsius, f means Fahrenheit
 
 ## Installation in crontab
 To run the script periodically, it would be recommended to place it 
