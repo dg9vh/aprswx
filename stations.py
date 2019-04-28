@@ -83,7 +83,7 @@ stations = [
         {'callsign':'DB0SBN','qth':'Wangenheim','rubric':'aprswx-dl-th','slot':3,'unit':'c'},
         {'callsign':'DB0SLF','qth':'Arnsgereuth','rubric':'aprswx-dl-th','slot':4,'unit':'c'},
         {'callsign':'DB0SBL','qth':'Gotha','rubric':'aprswx-dl-th','slot':5,'unit':'c'},
-        {'callsign':'DB0MGN-WX','qth':'Meiningen','rubric':'aprswx-dl-th','slot':6},
+        {'callsign':'DB0MGN-WX','qth':'Meiningen','rubric':'aprswx-dl-th','slot':6,'unit':'c'},
 # Brandenburg
         {'callsign':'DM1RG-6','qth':'Luckenwalde','rubric':'aprswx-dl-bb','slot':1,'unit':'c'},
         {'callsign':'DC7DOC','qth':'Potsdam','rubric':'aprswx-dl-bb','slot':2,'unit':'c'},
