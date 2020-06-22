@@ -1,10 +1,39 @@
 stations = [
+#hs-30
+        {'callsign':'HS3LIQ-2','qth':'Nakhon Ratchasima','rubric':'aprswx-hs-30','slot':1,'unit':'c'},
+#ct-pt-11
+        {'callsign':'CR7AUX-13','qth':'Oeiras','rubric':'aprswx-ct-pt-11','slot':1,'unit':'c'},
 #us-ca-ven
         {'callsign':'FW2594','qth':'Oak View','rubric':'aprswx-us-ca-ven','slot':1,'unit':'f'},
+        {'callsign':'EW1856','qth':'St. Susana','rubric':'aprswx-us-ca-ven','slot':2,'unit':'f'},
+#us-ct-nhv
+        {'callsign':'EW0704','qth':'Seymour','rubric':'aprswx-us-ct-nhv','slot':1,'unit':'f'},
+#us-in-ham
+        {'callsign':'NF9K-13','qth':'Noblesville','rubric':'aprswx-us-in-ham','slot':1,'unit':'f'},
+#us-nc-gas
+        {'callsign':'KN4MGS-13','qth':'Mt.Holly','rubric':'aprswx-us-nc-gas','slot':1,'unit':'f'},
+#us-nc-ncc191
+        {'callsign':'W4DNA','qth':'Goldsboro','rubric':'aprswx-us-nc-ncc191','slot':1,'unit':'f'},
+#us-nj-con
+        {'callsign':'DW3142','qth':'Loudon','rubric':'aprswx-us-nh-con','slot':1,'unit':'f'},
+#us-nj-mid
+        {'callsign':'KB2EAR-13','qth':'Kendall P.','rubric':'aprswx-us-nj-mid','slot':1,'unit':'f'},
+#us-nj-mon
+        {'callsign':'K2IE-13','qth':'Strathmore','rubric':'aprswx-us-nj-mon','slot':1,'unit':'f'},
+#us-nv-nvc031
+        {'callsign':'EW6551','qth':'Reno','rubric':'aprswx-us-nv-nvc031','slot':1,'unit':'f'},
 #us-sc-sc
         {'callsign':'CW7235','qth':'Sumter','rubric':'aprswx-us-sc-sc','slot':1,'unit':'f'},
         {'callsign':'EW9963','qth':'Cherryvale','rubric':'aprswx-us-sc-sc','slot':2,'unit':'f'},
         {'callsign':'KK4F','qth':'Sumter','rubric':'aprswx-us-sc-sc','slot':3,'unit':'f'},
+#us-va-vac059
+#us-va-vac199
+        {'callsign':'DW3433','qth':'Yorktown','rubric':'aprswx-us-va-vac199','slot':1,'unit':'f'},
+        {'callsign':'NM4SH','qth':'Poquoson','rubric':'aprswx-us-va-vac199','slot':2,'unit':'f'},
+        {'callsign':'EW1731','qth':'Poquoson','rubric':'aprswx-us-va-vac199','slot':3,'unit':'f'},
+        {'callsign':'EW9762','qth':'East Hampton','rubric':'aprswx-us-va-vac199','slot':4,'unit':'f'},
+        {'callsign':'W4AWS','qth':'Gloucester Pt.','rubric':'aprswx-us-va-vac199','slot':5,'unit':'f'},
+#us-va-vac735
 # Saarland
         {'callsign':'CW3322','qth':'Geislautern','rubric':'aprswx-dl-sl','slot':1,'unit':'c'},
         {'callsign':'DC0VZ-6','qth':'Gersweiler','rubric':'aprswx-dl-sl','slot':2,'unit':'c'},
@@ -12,12 +41,13 @@ stations = [
         {'callsign':'EW9191','qth':'Neunkirchen','rubric':'aprswx-dl-sl','slot':4,'unit':'c'},
         {'callsign':'CW8033','qth':'Illingen','rubric':'aprswx-dl-sl','slot':5,'unit':'c'},
         {'callsign':'DO7VLR-5','qth':'Hangard','rubric':'aprswx-dl-sl','slot':6,'unit':'c'},
+        {'callsign':'DO2IO-13','qth':'Neunkirchen','rubric':'aprswx-dl-sl','slot':7,'unit':'c'},
 # Rheinland-Pfalz
         {'callsign':'DH2PG-6','qth':'Oberpierscheid','rubric':'aprswx-dl-rp','slot':1,'unit':'c'},
         {'callsign':'DB5WY-13','qth':'Pottum','rubric':'aprswx-dl-rp','slot':2,'unit':'c'},
         {'callsign':'DH2PG-5','qth':'Koblenz','rubric':'aprswx-dl-rp','slot':3,'unit':'c'},
         {'callsign':'DK5WB-6','qth':'Dannstadt','rubric':'aprswx-dl-rp','slot':4,'unit':'c'},
-        {'callsign':'EW4164','qth':'Bad Bergzabern','rubric':'aprswx-dl-rp','slot':5,'unit':'c'},
+        {'callsign':'EW4164','qth':'Bad Bergz.','rubric':'aprswx-dl-rp','slot':5,'unit':'c'},
 # Nordrhein-Westfalen
         {'callsign':'DB0DBN-13','qth':'Koenigsw.','rubric':'aprswx-dl-nw','slot':1,'unit':'c'},
         {'callsign':'DF2ET-13','qth':'Bochum','rubric':'aprswx-dl-nw','slot':2,'unit':'c'},
@@ -28,7 +58,7 @@ stations = [
         {'callsign':'CW0539','qth':'Frechen','rubric':'aprswx-dl-nw','slot':7,'unit':'c'},
         {'callsign':'DB0WML','qth':'Klein Reken','rubric':'aprswx-dl-nw','slot':8,'unit':'c'},
         {'callsign':'DL5BQ-11','qth':'Herten','rubric':'aprswx-dl-nw','slot':9,'unit':'c'},
-        {'callsign':'DB0WXR','qth':'Recklinghausen','rubric':'aprswx-dl-nw','slot':10,'unit':'c'},
+        {'callsign':'DB0WXR','qth':'Recklinghsn.','rubric':'aprswx-dl-nw','slot':10,'unit':'c'},
 # Hessen
         {'callsign':'EDDF','qth':'Frankfurt','rubric':'aprswx-dl-he','slot':1,'unit':'c'},
         {'callsign':'EW0954','qth':'Bebra','rubric':'aprswx-dl-he','slot':2,'unit':'c'},
@@ -47,6 +77,7 @@ stations = [
         {'callsign':'DG2GG-6','qth':'Hinterzarten','rubric':'aprswx-dl-bw','slot':7,'unit':'c'},
         {'callsign':'CW3451','qth':'Regensdorf','rubric':'aprswx-dl-bw','slot':8,'unit':'c'},
         {'callsign':'DB0LHR-6','qth':'Lahr','rubric':'aprswx-dl-bw','slot':9,'unit':'c'},
+        {'callsign':'D0852','qth':'Eningen u.A.','rubric':'aprswx-dl-bw','slot':10,'unit':'c'},
 # Schleswig-Holstein
         {'callsign':'CW4548','qth':'Geestacht','rubric':'aprswx-dl-sh','slot':1,'unit':'c'},
         {'callsign':'DC8LV','qth':'Itzehoe','rubric':'aprswx-dl-sh','slot':2,'unit':'c'},
@@ -54,6 +85,7 @@ stations = [
         {'callsign':'DD9LH-1','qth':'Wesseln','rubric':'aprswx-dl-sh','slot':4,'unit':'c'},
         {'callsign':'DL8JF','qth':'Goeldenitz','rubric':'aprswx-dl-sh','slot':5,'unit':'c'},
         {'callsign':'DB0HHN','qth':'Huettblek','rubric':'aprswx-dl-sh','slot':6,'unit':'c'},
+        {'callsign':'DJ3LE','qth':'Silberstedt','rubric':'aprswx-dl-sh','slot':7,'unit':'c'},
 # Berlin
         {'callsign':'EW8282','qth':'Biesdorf','rubric':'aprswx-dl-be','slot':1,'unit':'c'},
         {'callsign':'DM1AS-13','qth':'Berlin','rubric':'aprswx-dl-be','slot':2,'unit':'c'},
@@ -63,6 +95,7 @@ stations = [
         {'callsign':'DW4240','qth':'Ohrum','rubric':'aprswx-dl-ni','slot':3,'unit':'c'},
         {'callsign':'DB0WAD-13','qth':'Wittingen','rubric':'aprswx-dl-ni','slot':4,'unit':'c'},
         {'callsign':'DL6MM-4','qth':'Negenborn','rubric':'aprswx-dl-ni','slot':5,'unit':'c'},
+        {'callsign':'DB0USL-10','qth':'Uslar','rubric':'aprswx-dl-ni','slot':6,'unit':'c'},
 # Meklenburg-Vorpommern
         {'callsign':'DL9GRB-6','qth':'Bad Doberan','rubric':'aprswx-dl-mv','slot':1,'unit':'c'},
         {'callsign':'EW3693','qth':'Schwerin','rubric':'aprswx-dl-mv','slot':2,'unit':'c'},
@@ -78,7 +111,7 @@ stations = [
         {'callsign':'DB7MJ-6','qth':'Sonthofen','rubric':'aprswx-dl-by','slot':5,'unit':'c'},
         {'callsign':'DO7DH-5','qth':'Unterneukirchen','rubric':'aprswx-dl-by','slot':6,'unit':'c'},
 # Thueringen
-        {'callsign':'DL2AKT-13','qth':'Hohenfelden','rubric':'aprswx-dl-th','slot':1,'unit':'c'},
+        {'callsign':'DL2AKT-13','qth':'Hohenf.','rubric':'aprswx-dl-th','slot':1,'unit':'c'},
         {'callsign':'DW5049','qth':'Jena','rubric':'aprswx-dl-th','slot':2,'unit':'c'},
         {'callsign':'DB0SBN','qth':'Wangenheim','rubric':'aprswx-dl-th','slot':3,'unit':'c'},
         {'callsign':'DB0SLF','qth':'Arnsgereuth','rubric':'aprswx-dl-th','slot':4,'unit':'c'},
@@ -90,14 +123,18 @@ stations = [
         {'callsign':'DB0TA','qth':'Bernau','rubric':'aprswx-dl-bb','slot':3,'unit':'c'},
         {'callsign':'DO5JWA-6','qth':'Zehdenick','rubric':'aprswx-dl-bb','slot':4,'unit':'c'},
         {'callsign':'DB0LY-6','qth':'Lychen','rubric':'aprswx-dl-bb','slot':5,'unit':'c'},
+        {'callsign':'DL7AND-1','qth':'Berlin','rubric':'aprswx-dl-bb','slot':6,'unit':'c'},
+        {'callsign':'DH1BSK','qth':'Frankfurt/O','rubric':'aprswx-dl-bb','slot':7,'unit':'c'},
+        {'callsign':'DL2BWO-13','qth':'Bernau','rubric':'aprswx-dl-bb','slot':8,'unit':'c'},
+        {'callsign':'DM5RC','qth':'Cottbus','rubric':'aprswx-dl-bb','slot':9,'unit':'c'},
 # Sachsen-Anhalt
         {'callsign':'FW2924','qth':'Dieskau','rubric':'aprswx-dl-st','slot':1,'unit':'c'},
         {'callsign':'DM1AD-13','qth':'Magdeburg','rubric':'aprswx-dl-st','slot':2,'unit':'c'},
-        {'callsign':'DG0CCO-13','qth':'Tangermuende','rubric':'aprswx-dl-st','slot':3,'unit':'c'},
+        {'callsign':'DG0CCO-13','qth':'Tangerm.','rubric':'aprswx-dl-st','slot':3,'unit':'c'},
         {'callsign':'DG0CDC-13','qth':'Stendal','rubric':'aprswx-dl-st','slot':4,'unit':'c'},
         {'callsign':'DL8MYG','qth':'Colbitz','rubric':'aprswx-dl-st','slot':5,'unit':'c'},
         {'callsign':'DM4JH-5','qth':'Dessau','rubric':'aprswx-dl-st','slot':6,'unit':'c'},
-        {'callsign':'DO1AA','qth':'Dessau','rubric':'aprswx-dl-st','slot':7,'unit':'c'},
+        {'callsign':'DO1AA','qth':'Coswig','rubric':'aprswx-dl-st','slot':7,'unit':'c'},
 # Bremen
 # Luxemburg
         {'callsign':'LX1US-WX','qth':'Mertzig','rubric':'aprswx-lx','slot':1,'unit':'c'},
@@ -112,7 +149,7 @@ stations = [
         {'callsign':'EW2609','qth':'Wien','rubric':'aprswx-oe-oe1','slot':2,'unit':'c'},
         {'callsign':'OE3WYC-1','qth':'Wien','rubric':'aprswx-oe-oe1','slot':3,'unit':'c'},
         {'callsign':'OE3BUB-10','qth':'Gerasdorf','rubric':'aprswx-oe-oe1','slot':4,'unit':'c'},
-        {'callsign':'DW4277','qth':'Leopoldsdorf','rubric':'aprswx-oe-oe1','slot':5,'unit':'c'},
+        {'callsign':'DW4277','qth':'Leopoldsd.','rubric':'aprswx-oe-oe1','slot':5,'unit':'c'},
         {'callsign':'DW3857','qth':'Moedling','rubric':'aprswx-oe-oe1','slot':6,'unit':'c'},
 #        {'callsign':'OE3ZK-13','qth':'Wien','rubric':'aprswx-oe-oe1','slot':7,'unit':'c'},
 #OE2
@@ -121,7 +158,7 @@ stations = [
         {'callsign':'OE3RGB-13','qth':'Heidenr.','rubric':'aprswx-oe-oe3','slot':1,'unit':'c'},
         {'callsign':'OE3UKW','qth':'Schweinbarth','rubric':'aprswx-oe-oe3','slot':2,'unit':'c'},
         {'callsign':'FW1957','qth':'Felixdorf','rubric':'aprswx-oe-oe3','slot':3,'unit':'c'},
-        {'callsign':'EW6786','qth':'Hinteralm','rubric':'aprswx-oe-oe3','slot':4,'unit':'c'},
+        {'callsign':'EW6786','qth':'JN77TX','rubric':'aprswx-oe-oe3','slot':4,'unit':'c'},
         {'callsign':'OE3MNS-4','qth':'Judenau','rubric':'aprswx-oe-oe3','slot':5,'unit':'c'},
 #OE4
 #        {'callsign':'OE4CEN','qth':'Leogang','rubric':'aprswx-oe-oe4','slot':1,'unit':'c'},
@@ -143,7 +180,10 @@ stations = [
         {'callsign':'OE7XKT','qth':'Kaltenbach','rubric':'aprswx-oe-oe7','slot':2,'unit':'c'},
         {'callsign':'DW2619','qth':'Kirchbichl','rubric':'aprswx-oe-oe7','slot':3,'unit':'c'},
         {'callsign':'DW5225','qth':'Patsch','rubric':'aprswx-oe-oe7','slot':4,'unit':'c'},
-        {'callsign':'OE7BSH-1','qth':'Kitzbuehel','rubric':'aprswx-oe-oe7','slot':5,'unit':'c'},
+        {'callsign':'OE7BSH-WX','qth':'Kitzbuehel','rubric':'aprswx-oe-oe7','slot':5,'unit':'c'},
+        {'callsign':'OE7SBH-WX','qth':'Kaltenbach','rubric':'aprswx-oe-oe7','slot':6,'unit':'c'},
+        {'callsign':'OE7MFI-13','qth':'St.Ulrich','rubric':'aprswx-oe-oe7','slot':7,'unit':'c'},
+        {'callsign':'OE7AOT','qth':'Hochfilzen','rubric':'aprswx-oe-oe7','slot':8,'unit':'c'},
 #OE8
         {'callsign':'OE8LCK-13','qth':'Klagenfurt','rubric':'aprswx-oe-oe8','slot':1,'unit':'c'},
 #OE9
@@ -164,11 +204,11 @@ stations = [
 #F-11
         {'callsign':'CW1292','qth':'Clamart','rubric':'aprswx-f-11','slot':1,'unit':'c'},
         {'callsign':'LFPG','qth':'Charles-de-Gaulle','rubric':'aprswx-f-11','slot':2,'unit':'c'},
-        {'callsign':'F6CNB-13','qth':'Saulx-l.-Chart.','rubric':'aprswx-f-11','slot':3,'unit':'c'},
-        {'callsign':'F5GSJ-13','qth':'Ozoir-la-Ferriere','rubric':'aprswx-f-11','slot':4,'unit':'c'},
+        {'callsign':'F6CNB-13','qth':'Saulx-l.-C.','rubric':'aprswx-f-11','slot':3,'unit':'c'},
+        {'callsign':'F5GSJ-13','qth':'Ozoir-la-F.','rubric':'aprswx-f-11','slot':4,'unit':'c'},
         {'callsign':'F1HKX-13','qth':'Bailly-Carrois','rubric':'aprswx-f-11','slot':5,'unit':'c'},
 #F-24
-        {'callsign':'EW5775','qth':'Chartes-sur-Cher','rubric':'aprswx-f-24','slot':1,'unit':'c'},
+        {'callsign':'EW5775','qth':'Chartes-s.-C.','rubric':'aprswx-f-24','slot':1,'unit':'c'},
 #F-27
 #F-28
 #F-32
@@ -179,11 +219,11 @@ stations = [
 #F-52
         {'callsign':'EW2977','qth':'Plouharnel','rubric':'aprswx-f-52','slot':1,'unit':'c'},
         {'callsign':'CW5839','qth':'Nanteuil','rubric':'aprswx-f-52','slot':2,'unit':'c'},
-        {'callsign':'DW7198','qth':'St-Maurice-la-Clouere','rubric':'aprswx-f-52','slot':3,'unit':'c'},
-        {'callsign':'DW7784','qth':'Sille-le-Guillaume','rubric':'aprswx-f-52','slot':4,'unit':'c'},
+        {'callsign':'DW7198','qth':'St-Maurice','rubric':'aprswx-f-52','slot':3,'unit':'c'},
+        {'callsign':'DW7784','qth':'Sille-le-G.','rubric':'aprswx-f-52','slot':4,'unit':'c'},
         {'callsign':'DW1329','qth':'Vernantes','rubric':'aprswx-f-52','slot':5,'unit':'c'},
         {'callsign':'DW6925','qth':'Damgan','rubric':'aprswx-f-52','slot':6,'unit':'c'},
-        {'callsign':'EW0490','qth':'St-Brevin-les-Pins','rubric':'aprswx-f-52','slot':7,'unit':'c'},
+        {'callsign':'EW0490','qth':'St-Brev.l.P.','rubric':'aprswx-f-52','slot':7,'unit':'c'},
         {'callsign':'FW0623','qth':'St-Gereon','rubric':'aprswx-f-52','slot':8,'unit':'c'},
         {'callsign':'DW3787','qth':'Suce-sur-Erdre','rubric':'aprswx-f-52','slot':9,'unit':'c'},
 #F-53
@@ -196,14 +236,18 @@ stations = [
 #pa-lb
         {'callsign':'PE2KMV-10','qth':'Valkenburg','rubric':'aprswx-pa-lb','slot':1,'unit':'c'},
         {'callsign':'CW6175','qth':'Kerkrade','rubric':'aprswx-pa-lb','slot':2,'unit':'c'},
+#pa-gr
+        {'callsign':'EW0051','qth':'Groningen','rubric':'aprswx-pa-gr','slot':1,'unit':'c'},
+#pa-nh
+        {'callsign':'CW0449','qth':'Amsterdam-N','rubric':'aprswx-pa-nh','slot':1,'unit':'c'},
 #vk-nsw
         {'callsign':'FW4109','qth':'Moree','rubric':'aprswx-vk-nsw','slot':1,'unit':'c'},
         {'callsign':'VK2AAK','qth':'Nabiac','rubric':'aprswx-vk-nsw','slot':2,'unit':'c'},
         {'callsign':'CW8496','qth':'Orange','rubric':'aprswx-vk-nsw','slot':3,'unit':'c'},
 #vk-nt
         {'callsign':'YPDN','qth':'Nightcliff','rubric':'aprswx-vk-nt','slot':1,'unit':'c'},
-        {'callsign':'FW3886','qth':'McMinns Lagoon','rubric':'aprswx-vk-nt','slot':2,'unit':'c'},
-        {'callsign':'VK8ZKZ-1','qth':'Alice Springs','rubric':'aprswx-vk-nt','slot':3,'unit':'c'},
+        {'callsign':'FW3886','qth':'McMinns L.','rubric':'aprswx-vk-nt','slot':2,'unit':'c'},
+        {'callsign':'VK8ZKZ-1','qth':'PG66VH','rubric':'aprswx-vk-nt','slot':3,'unit':'c'},
 #vk-qld
         {'callsign':'EW7672','qth':'Cairns','rubric':'aprswx-vk-qld','slot':1,'unit':'c'},
         {'callsign':'DW2907','qth':'Merryvale','rubric':'aprswx-vk-qld','slot':2,'unit':'c'},

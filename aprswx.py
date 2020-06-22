@@ -61,7 +61,10 @@ def send_DAPNET(entry, station):
 		pass
 
 	try:
-		wind = "w: " + entry["wind_speed"]+ "m/s at " + entry["wind_direction"] + "deg "
+		if float(entry["wind_speed"]) == 0:
+			wind = "w: no "
+		else:
+			wind = "w: " + entry["wind_speed"]+ "m/s=" + entry["wind_direction"] + "deg "
 		msg+=wind
 		if float(entry["wind_speed"]) > 10:
 			highwinds = True
@@ -76,16 +79,22 @@ def send_DAPNET(entry, station):
 		pass
 
 	try:
-		rain = "rain: " + entry["rain_1h"] + "mm/h"
+		pressure = "hPa: " + entry["pressure"] + " "
+		msg+=pressure
+	except:
+		pass
+
+	try:
+		rain = "r: " + entry["rain_1h"] + "mm/h"
 		msg+=rain
 	except:
 		pass
 
 	# preparing the post-message
-	post={ "rubricName": station["rubric"], "text": msg, "number": station["slot"] }
+	post={ "rubricName": station["rubric"], "text": msg[:80], "number": station["slot"] }
 	print post , len(msg)
 	if len(msg) > 80:
-		print "Message to long!!!"
+		print "Message too long!!!", station["callsign"]
 	sendingtime = datetime.datetime.now().hour%4
 	if debug:
 		print "Debug mode ON"
@@ -97,7 +106,7 @@ def send_DAPNET(entry, station):
 		print "Sending to DAPNET"
 
 #		resp = requests.post('https://hampager.de/api/news/', json=post, auth=HTTPBasicAuth(dapnetuser, dapnetpasswd))
-		resp = requests.post('http://44.225.164.27:8080/news/', json=post, auth=HTTPBasicAuth(dapnetuser, dapnetpasswd))
+		resp = requests.post('http://44.149.166.27:8080/news/', json=post, auth=HTTPBasicAuth(dapnetuser, dapnetpasswd))
 		if resp.status_code != 201:
 			print "Error at", station["callsign"]
 			print('POST /news/ {}'.format(resp.status_code))
