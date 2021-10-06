@@ -8,9 +8,13 @@ Basic configuration is done in two files:
 ### Configuration of your credentials in `credentials.py`
 Fill the corresponding variables with your information: 
 `#!/usr/bin/python` 
+
 `# -*- coding: utf-8 -*-` 
+
 `dapnetuser="YOURDAPNETWEB-USERNAME"` 
+
 `dapnetpasswd="YOURDAPNETWEB-PASSWORD"` 
+
 `aprsapikey="YOURAPRS.FI-APIKEY"`
 
 ### Configuration of the weather-stations in `stations.py`
